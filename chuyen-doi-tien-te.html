@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Chuyển đổi tiền tệ</title>
+</head>
+<body>
+	<p>Chuyển đổi tiền tệ</p>
+<table>
+	<tr>
+		<th>Ammout</th>
+			
+		<th> From Currency</th>
+
+		<th>To Currency</th>
+	</tr>
+	<tr>
+		<td align="center"><input id="Tien" type="number"></td>
+		<td align="center">
+			<select id="From Currency">
+				<option value="25000">VND</option>
+				<option value="1">USD</option>
+			</select>
+		</td>
+		<td align="center">
+			<select id="To Currency">
+				<option value="1">USD</option>
+				<option value="25000">VND</option>
+			</select>
+			<td><button type="button" onclick="Convert();" >Convert</button></td>
+	</tr>
+</table>
+<h4 id="Result"></h4>
+<script>
+	function Convert(){
+		var Ammout= parseInt(document.getElementById("Tien").value);
+		var VND = document.getElementById("To Currency").value/ document.getElementById("From Currency").value;
+		var Result = VND*Ammout;
+		document.getElementById("Result").innerHTML= "Result" + Result;
+	}
+</script>
+</body>
+</html>
