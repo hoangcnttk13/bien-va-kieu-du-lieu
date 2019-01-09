@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello</title>
+</head>
+<body>
+	<script>
+		var x = parseInt(prompt("Nhập điểm vật lý"));
+		var y = parseInt(prompt("Nhập điểm hóa"));
+		var c = parseInt(prompt("Nhập điểm sinh"));
+		var tong= x+y+c;
+		var DTB= Math.round(tong/3);
+
+		document.write("Điểm tổng là:" + tong);
+		document.write("<br/>");
+		document.write("Điểm trung bình là:" + DTB);
+		document.write("<br/>");
+	</script>
+<script>
+	var c = parseInt(prompt("Nhập độ c"));
+	var f = (9*c)/5+32;
+	document.write("Độ f là:"+f);
+	document.write("<br/>");
+</script>
+<script>
+	var r = parseInt(prompt("Nhập bán kính"));
+	var S = (r*2)*3.14;
+	document.write("Diện thích hình tròn là:"+S);
+	document.write("<br/>");
+	var d = parseInt(prompt("Nhập đường kính"));
+	var CV = d*3.14;
+	document.write("Chu vi hình tròn là:"+CV);
+	document.write("<br/>");
+</script>
+</body>
+</html>
